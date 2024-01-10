@@ -1,5 +1,7 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { airblack, jhaiho } from "../assets/images";
 import {
+    aws,
+    cPlusPlus,
     car,
     contact,
     css,
@@ -7,11 +9,12 @@ import {
     express,
     git,
     github,
+    go,
     html,
+    jQuery,
     javascript,
     linkedin,
     mongodb,
-    motion,
     mui,
     nextjs,
     nodejs,
@@ -23,14 +26,26 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    vercel,
+    vuejs
 } from "../assets/icons";
 
 export const skills = [
     {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Cloud",
+    },
+    {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
+    },
+    {
+        imageUrl: cPlusPlus,
+        name: "C++",
+        type: "Backend",
     },
     {
         imageUrl: express,
@@ -48,6 +63,11 @@ export const skills = [
         type: "Version Control",
     },
     {
+        imageUrl: go,
+        name: "Go",
+        type: "Backend",
+    },
+    {
         imageUrl: html,
         name: "HTML",
         type: "Frontend",
@@ -58,14 +78,14 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: jQuery,
+        name: "jQuery",
+        type: "Frontend",
+    },
+    {
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
     },
     {
         imageUrl: mui,
@@ -106,60 +126,43 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: vercel,
+        name: "Vercel",
+        type: "Hosting",
+    },
+    {
+        imageUrl: vuejs,
+        name: "Vue",
+        type: "Frontend",
     }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        title: "Backend Developer Intern",
+        company_name: "Airblack",
+        icon: airblack,
+        iconBg: "#fff",
+        date: "June 2022 - July 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed new APIs according to business needs using Node.js, Express and MongoDB.",
+            "Solved 20+ bugs weekly raised by end-users related to the backend and automated the recurring bugs, reducing similar bugs count by 20%.",
+            "Wrote Python scripts to insert new data in the database and to modify the database to fix the issues raised by end users.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        title: "Software Developer Intern",
+        company_name: "Jhaiho",
+        icon: jhaiho,
+        iconBg: "#000",
+        date: "Nov 2021 - Apr 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Worked with a team of 30+ members to serve the customers who need tattoos.",
+            "Developed and Widgetized multiple modular UI using ReactJS, NextJS, and Typescript.",
+            "Worked on improving the page speed by optimizing the images, lazy loading, and reducing the bundle size.",
+            "Experience with Website development, SEO, performance analysis and optimizations.",
         ],
     },
 ];
@@ -173,12 +176,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/smochan',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/smochan',
     }
 ];
 
@@ -186,43 +189,27 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'University Broadcaster',
+        description: 'Developed a web application specific for university to share information in real-time among staff and students using websockets with admin panel for moderation',
+        link: 'https://github.com/smochan/univer-broadcast-server',
+        github: true,
+        // https://github.com/smochan/video-chat
+        // https://space.slyfin.com/
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Video Chat',
+        description: 'Created a video calling application with rooms using Vanilla JS, Node, Express, WebRTC, and Socket.io with room creator having acces to add and remove participants.',
+        link: 'https://github.com/smochan/video-chat',
+        github: true,
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Space Articles',
+        description: 'Website to see the latest articles from Space using NextJS and fetching the articles data from external API.',
+        link: 'https://space.slyfin.com/',
+        github: false,
     },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
 ];
